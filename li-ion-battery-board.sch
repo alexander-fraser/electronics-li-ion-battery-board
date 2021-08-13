@@ -1,0 +1,405 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7450 7500 0    50   ~ 0
+Li-Ion 18650 Battery Board
+Text Notes 8150 7650 0    50   ~ 0
+12 August 2021
+Text Notes 10600 7650 0    50   ~ 0
+1-0
+Text Notes 7000 6650 0    50   ~ 0
+Rev 1-0: Create protected 18650 li-ion battery board.
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6115E3AB
+P 8100 4000
+F 0 "J?" H 8128 3976 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 8128 3885 50  0000 L CNN
+F 2 "" H 8100 4000 50  0001 C CNN
+F 3 "~" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Management:AP9101CK6 U?
+U 1 1 6115F741
+P 4900 3550
+F 0 "U?" H 4900 4031 50  0000 C CNN
+F 1 "AP9101CK6" H 4900 3940 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4900 3550 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" H 4900 3600 50  0001 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6116037C
+P 4200 3950
+F 0 "R?" H 4270 3996 50  0000 L CNN
+F 1 "2K" H 4270 3905 50  0000 L CNN
+F 2 "" V 4130 3950 50  0001 C CNN
+F 3 "~" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611604C2
+P 4900 2650
+F 0 "R?" H 4970 2696 50  0000 L CNN
+F 1 "470R" H 4970 2605 50  0000 L CNN
+F 2 "" V 4830 2650 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6116093E
+P 5500 2950
+F 0 "C?" V 5248 2950 50  0000 C CNN
+F 1 "0.1u" V 5339 2950 50  0000 C CNN
+F 2 "" H 5538 2800 50  0001 C CNN
+F 3 "~" H 5500 2950 50  0001 C CNN
+	1    5500 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 61161C15
+P 6650 3800
+F 0 "Q?" H 6854 3846 50  0000 L CNN
+F 1 "2N7000" H 6854 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6850 3725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6650 3800 50  0001 L CNN
+	1    6650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 611625DD
+P 8600 2750
+F 0 "D?" H 8593 2967 50  0000 C CNN
+F 1 "LED" H 8593 2876 50  0000 C CNN
+F 2 "" H 8600 2750 50  0001 C CNN
+F 3 "~" H 8600 2750 50  0001 C CNN
+	1    8600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611633C6
+P 8050 2750
+F 0 "R?" H 8120 2796 50  0000 L CNN
+F 1 "R" H 8120 2705 50  0000 L CNN
+F 2 "" V 7980 2750 50  0001 C CNN
+F 3 "~" H 8050 2750 50  0001 C CNN
+	1    8050 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 61163E17
+P 3100 3500
+F 0 "BT?" H 3218 3596 50  0000 L CNN
+F 1 "Battery_Cell" H 3218 3505 50  0000 L CNN
+F 2 "" V 3100 3560 50  0001 C CNN
+F 3 "~" V 3100 3560 50  0001 C CNN
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SP3T SW?
+U 1 1 6116450A
+P 5550 5550
+F 0 "SW?" H 5550 5833 50  0000 C CNN
+F 1 "SW_SP3T" H 5550 5742 50  0000 C CNN
+F 2 "" H 4925 5725 50  0001 C CNN
+F 3 "~" H 4925 5725 50  0001 C CNN
+	1    5550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 6116A641
+P 3100 3850
+F 0 "#PWR?" H 3100 3700 50  0001 C CNN
+F 1 "-BATT" H 3115 4023 50  0000 C CNN
+F 2 "" H 3100 3850 50  0001 C CNN
+F 3 "" H 3100 3850 50  0001 C CNN
+	1    3100 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 3050 3100 3300
+Wire Wire Line
+	3100 3600 3100 3850
+Wire Wire Line
+	7650 3800 7650 4000
+Wire Wire Line
+	7650 4000 7900 4000
+Wire Wire Line
+	8200 2750 8450 2750
+$Comp
+L power:-BATT #PWR?
+U 1 1 6116DF50
+P 4900 4050
+F 0 "#PWR?" H 4900 3900 50  0001 C CNN
+F 1 "-BATT" H 4915 4223 50  0000 C CNN
+F 2 "" H 4900 4050 50  0001 C CNN
+F 3 "" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 3850 4900 4050
+$Comp
+L power:GND #PWR?
+U 1 1 6116EA46
+P 7650 4300
+F 0 "#PWR?" H 7650 4050 50  0001 C CNN
+F 1 "GND" H 7655 4127 50  0000 C CNN
+F 2 "" H 7650 4300 50  0001 C CNN
+F 3 "" H 7650 4300 50  0001 C CNN
+	1    7650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4300 7650 4100
+Wire Wire Line
+	7650 4100 7900 4100
+$Comp
+L power:GND #PWR?
+U 1 1 6117146D
+P 8950 2900
+F 0 "#PWR?" H 8950 2650 50  0001 C CNN
+F 1 "GND" H 8955 2727 50  0000 C CNN
+F 2 "" H 8950 2900 50  0001 C CNN
+F 3 "" H 8950 2900 50  0001 C CNN
+	1    8950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2750 8950 2750
+Wire Wire Line
+	8950 2750 8950 2900
+Wire Wire Line
+	7650 2600 7650 2750
+Wire Wire Line
+	7650 2750 7900 2750
+Wire Wire Line
+	4500 3550 4200 3550
+Wire Wire Line
+	4200 3550 4200 3800
+Wire Wire Line
+	4200 4100 4200 4300
+$Comp
+L power:-BATT #PWR?
+U 1 1 61175BB5
+P 5900 3050
+F 0 "#PWR?" H 5900 2900 50  0001 C CNN
+F 1 "-BATT" H 5915 3223 50  0000 C CNN
+F 2 "" H 5900 3050 50  0001 C CNN
+F 3 "" H 5900 3050 50  0001 C CNN
+	1    5900 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 2400 4900 2500
+Wire Wire Line
+	4900 2800 4900 2950
+Wire Wire Line
+	5350 2950 4900 2950
+Connection ~ 4900 2950
+Wire Wire Line
+	4900 2950 4900 3250
+Wire Wire Line
+	5650 2950 5900 2950
+Wire Wire Line
+	5900 2950 5900 3050
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 61161D18
+P 6650 3300
+F 0 "Q?" H 6854 3254 50  0000 L CNN
+F 1 "2N7000" H 6854 3345 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6850 3225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6650 3300 50  0001 L CNN
+	1    6650 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 611803AA
+P 6750 4150
+F 0 "#PWR?" H 6750 4000 50  0001 C CNN
+F 1 "-BATT" H 6765 4323 50  0000 C CNN
+F 2 "" H 6750 4150 50  0001 C CNN
+F 3 "" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3500 6750 3600
+Wire Wire Line
+	6750 4000 6750 4150
+Wire Wire Line
+	5300 3650 6300 3650
+Wire Wire Line
+	5300 3450 6300 3450
+Wire Wire Line
+	6300 3300 6450 3300
+Wire Wire Line
+	6300 3300 6300 3450
+Wire Wire Line
+	6300 3650 6300 3800
+Wire Wire Line
+	6300 3800 6450 3800
+Text GLabel 6750 2900 1    50   Input ~ 0
+SWITCH
+Wire Wire Line
+	6750 2900 6750 3100
+Text GLabel 5100 5550 0    50   Input ~ 0
+SWITCH
+Wire Wire Line
+	5100 5550 5350 5550
+Text GLabel 4200 4300 3    50   Input ~ 0
+SWITCH
+$Comp
+L power:GND #PWR?
+U 1 1 6119C681
+P 5950 5800
+F 0 "#PWR?" H 5950 5550 50  0001 C CNN
+F 1 "GND" H 5955 5627 50  0000 C CNN
+F 2 "" H 5950 5800 50  0001 C CNN
+F 3 "" H 5950 5800 50  0001 C CNN
+	1    5950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5650 5950 5650
+Wire Wire Line
+	5950 5650 5950 5800
+NoConn ~ 5750 5450
+$Comp
+L power:-BATT #PWR?
+U 1 1 6119DB9A
+P 5950 5550
+F 0 "#PWR?" H 5950 5400 50  0001 C CNN
+F 1 "-BATT" V 5965 5678 50  0000 L CNN
+F 2 "" H 5950 5550 50  0001 C CNN
+F 3 "" H 5950 5550 50  0001 C CNN
+	1    5950 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 6119FD35
+P 3100 3050
+F 0 "#PWR?" H 3100 2900 50  0001 C CNN
+F 1 "+BATT" H 3115 3223 50  0000 C CNN
+F 2 "" H 3100 3050 50  0001 C CNN
+F 3 "" H 3100 3050 50  0001 C CNN
+	1    3100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 611A0718
+P 7650 2600
+F 0 "#PWR?" H 7650 2450 50  0001 C CNN
+F 1 "+BATT" H 7665 2773 50  0000 C CNN
+F 2 "" H 7650 2600 50  0001 C CNN
+F 3 "" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 611A14BD
+P 4900 2400
+F 0 "#PWR?" H 4900 2250 50  0001 C CNN
+F 1 "+BATT" H 4915 2573 50  0000 C CNN
+F 2 "" H 4900 2400 50  0001 C CNN
+F 3 "" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 611A2013
+P 7650 3800
+F 0 "#PWR?" H 7650 3650 50  0001 C CNN
+F 1 "+BATT" H 7665 3973 50  0000 C CNN
+F 2 "" H 7650 3800 50  0001 C CNN
+F 3 "" H 7650 3800 50  0001 C CNN
+	1    7650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5550 5950 5550
+Text Notes 4050 2100 0    50   ~ 0
+Li-Ion Battery Protection
+Text Notes 7550 2300 0    50   ~ 0
+Power Status
+Text Notes 7550 3500 0    50   ~ 0
+Power Output
+Text Notes 4800 5100 0    50   ~ 0
+Switch
+Text Notes 4750 6300 0    50   ~ 0
+Switches power on-off.\nConnects P- directly to BATT- to \n(1) override protection and (2) prime the IC.
+Text Notes 2950 2750 0    50   ~ 0
+Battery Holder
+Wire Notes Line
+	4000 2000 7300 2000
+Wire Notes Line
+	7300 2000 7300 4750
+Wire Notes Line
+	7300 4750 4000 4750
+Wire Notes Line
+	4000 4750 4000 2000
+Wire Notes Line
+	7500 2150 9150 2150
+Wire Notes Line
+	9150 2150 9150 3200
+Wire Notes Line
+	9150 3200 7500 3200
+Wire Notes Line
+	7500 3200 7500 2150
+Wire Notes Line
+	7500 3400 9000 3400
+Wire Notes Line
+	9000 3400 9000 4600
+Wire Notes Line
+	9000 4600 7500 4600
+Wire Notes Line
+	7500 4600 7500 3400
+Wire Notes Line
+	2900 2600 3800 2600
+Wire Notes Line
+	3800 2600 3800 4150
+Wire Notes Line
+	3800 4150 2900 4150
+Wire Notes Line
+	2900 4150 2900 2600
+Wire Notes Line
+	4700 4950 6550 4950
+Wire Notes Line
+	6550 4950 6550 6400
+Wire Notes Line
+	6550 6400 4700 6400
+Wire Notes Line
+	4700 6400 4700 4950
+$EndSCHEMATC
