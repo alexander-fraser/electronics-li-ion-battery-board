@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri "C:/Users/alexf/Documents/Coding Projects/Digikey Library/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
+  (lib (name electronics-li-ion-battery-board)(type KiCad)(uri ${KIPRJMOD}/electronics-li-ion-battery-board.pretty)(options "")(descr ""))
+)
