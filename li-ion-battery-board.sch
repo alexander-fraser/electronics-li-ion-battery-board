@@ -292,7 +292,6 @@ Wire Wire Line
 	5750 5650 5950 5650
 Wire Wire Line
 	5950 5650 5950 5800
-NoConn ~ 5750 5450
 $Comp
 L power:-BATT #PWR06
 U 1 1 6119DB9A
@@ -358,8 +357,6 @@ Text Notes 7550 3500 0    50   ~ 0
 Power Output
 Text Notes 4800 5100 0    50   ~ 0
 Switch
-Text Notes 4750 6300 0    50   ~ 0
-Switches power on-off.\nConnects P- directly to BATT- to \n(1) override protection and (2) prime the IC.
 Text Notes 2950 2750 0    50   ~ 0
 Battery Holder
 Wire Notes Line
@@ -402,4 +399,10 @@ Wire Notes Line
 	6550 6400 4700 6400
 Wire Notes Line
 	4700 6400 4700 4950
+Text Notes 4750 6300 0    50   ~ 0
+Switches power on-off.\nConnects P- directly to BATT- \nto prime the IC.
+Text GLabel 5950 5450 2    50   Input ~ 0
+SWITCH
+Wire Wire Line
+	5750 5450 5950 5450
 $EndSCHEMATC
